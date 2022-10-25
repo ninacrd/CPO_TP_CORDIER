@@ -25,26 +25,23 @@ public class TP2_relation_1_CORDIER {
         System.out.println("liste des voitures disponibles "+ uneClio +
         "\n" + uneAutreClio + "\n" + une2008 + "\n" + uneMicra ) ;
         
-        /* question 4 */
         
         bob.liste_voitures[0] = uneClio ;
-        bob.liste_voitures[2] = une2008;
+        bob.liste_voitures[1] = une2008;
         bob.nbVoitures = 2 ;
         uneClio.Proprietaire = bob ;
         une2008.Proprietaire = bob;
         System.out.println("la premiere voiture de Bob est " + 
-        bob.liste_voitures[0] + "\net la deuxieme est " + bob.liste_voitures[2]);
+        bob.liste_voitures[0] + "\net la deuxieme est " + bob.liste_voitures[1]);
         
-        reno.liste_voitures[1] = uneAutreClio ;
-        reno.liste_voitures[3] = uneMicra;
+        reno.liste_voitures[0] = uneClio ;
+        reno.liste_voitures[2] = uneMicra;
         reno.nbVoitures = 1 ;
         uneAutreClio.Proprietaire = reno ;
         uneMicra.Proprietaire = reno;
         System.out.println("la premiere voiture de Reno est " + 
-        reno.liste_voitures[1] + "\net la deuxieme est " + reno.liste_voitures[3]);
-        
-        /* question 9 */
-        
+        reno.liste_voitures[0] + "\net la deuxieme est " + reno.liste_voitures[2]);
+            
     }
     
 }

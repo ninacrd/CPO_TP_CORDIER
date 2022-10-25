@@ -19,20 +19,34 @@ public class Personne {
         prenom = unprenom;
         liste_voitures = new Voiture[3];
         
-        /* question 7 */
     }
     
     @Override
     public String toString() {
         String chaine_a_retourner;
-        chaine_a_retourner = "\nnom : " + nom + "\nprenom : " + prenom;
+        chaine_a_retourner = "\nnom : " + nom + "\nprenom : " + prenom + 
+        "\nnombre de voitures : " + nbVoitures;
         return chaine_a_retourner ; 
     }
     
     public boolean ajouter_voiture( Voiture voiture_a_ajouter) {
-    // … a completer
+        if (voiture_a_ajouter.Proprietaire!=null){  
+            System.out.println(voiture_a_ajouter + "déjà prise");
+            return false;
+        }
+        else {
+            if (this.nbVoitures == 3){
+                System.out.println(this.nom + this.prenom+ "a déjà 3 voitures");
+                return false;
+            }
+        
+            else {
+                this.liste_voitures[nbVoitures] = voiture_a_ajouter;
+                nbVoitures += 1;
+                voiture_a_ajouter.Proprietaire = this  ;
+                return true;
+                }
     }
     
-    /* question 10 */
-    
+    }
 }

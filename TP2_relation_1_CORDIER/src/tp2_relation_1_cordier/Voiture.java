@@ -13,13 +13,13 @@ public class Voiture {
     String marque;
     int PuissanceCV;
     Personne Proprietaire ;
+
     
-    public Voiture(String unmodele, String unemarque, int unePuissanceCV) {
+    public Voiture (String unmodele, String unemarque, int unePuissanceCV) {
         modele = unmodele;
         marque = unemarque;
         PuissanceCV = unePuissanceCV;
         
-        /* question 5*/
         }
     
     @Override
