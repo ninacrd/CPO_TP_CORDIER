@@ -17,12 +17,13 @@ public class TP2_BIERES_CORDIER {
         // TODO code application logic here
     
     BouteilleBiere uneBiere = new BouteilleBiere("Cuvée des trolls", 7.0 ,"Dubuisson") ;
+    /*creation d'un nouvel objet bouteille biere*/
     uneBiere.lireEtiquette();
     uneBiere.Décapsuler();
     
     BouteilleBiere uneBiere2 = new BouteilleBiere("Leffe", 6.6 ,"Abbaye de Leffe") ;
     uneBiere2.lireEtiquette();
-    uneBiere2.Décapsuler();
+    uneBiere2.Décapsuler(); 
     
     BouteilleBiere uneBiere3 = new BouteilleBiere("Heineken", 5 ,"Pélican") ;
     uneBiere3.lireEtiquette();

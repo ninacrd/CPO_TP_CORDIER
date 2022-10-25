@@ -8,22 +8,24 @@ package tp2_bieres_cordier;
  *
  * @author Nina
  */
-public class BouteilleBiere {
-    String nom;
+public class BouteilleBiere { /*nouvelle classe cree*/
+    String nom; /*ajout des attributs sous leurs formes respectives*/
     double degreAlcool;
     String brasserie;
     boolean ouverte;
-    public void lireEtiquette() { 
+    public void lireEtiquette() { /*affiche les informations contenues sur  
+        l'etiquette de la bouteille de biere*/
         System.out.println("Bouteille de " + nom +" (" + degreAlcool +
         " degres) \nBrasserie : " + brasserie ) ;
     }
     public BouteilleBiere(String unNom, double unDegre, String uneBrasserie) {
+        /*creation d'un constructeur*/
         nom = unNom;
         degreAlcool = unDegre;
         brasserie = uneBrasserie;
         ouverte = false;
     }
-    public boolean Décapsuler(){
+    public boolean Décapsuler(){ /*creation d'une nouvelle methode*/
         if (ouverte == false) {
             ouverte = true;
         }
@@ -34,7 +36,8 @@ public class BouteilleBiere {
         return ouverte;
     }    
     @Override
-    public String toString() {
+    public String toString() { /*methode qui permet de retourner la chaine de 
+        caractere que l'on veut afficher quand l'objet est cree*/
         String chaine_a_retourner;
         chaine_a_retourner = nom + " (" + degreAlcool + " degrés) Ouverte ? ";
         if (ouverte == true ) chaine_a_retourner += "oui" ;
