@@ -13,4 +13,9 @@ public class Moussaka {
     public Moussaka(int NbCalories) {
         nbCalories = NbCalories;
     }
+    
+    @Override
+    public String toString() {
+        return String.valueOf(nbCalories);
+    }
 } 

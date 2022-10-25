@@ -19,7 +19,6 @@ public class TP2_manip_CORDIER {
         Tartiflette assiette2 = new Tartiflette(600);
         Tartiflette assiette3 = assiette2;
                 
-        /* question 5 */
         
         System.out.println("nb de calories de Assiette 1 : " + assiette1.nbCalories) ;
         System.out.println("nb de calories de Assiette 2 : " + assiette2.nbCalories) ;
@@ -27,12 +26,21 @@ public class TP2_manip_CORDIER {
         /* question 4 : deux tartiflettes ont ete crees, assiette2 et assiette3 
         referencent la meme tartiflette */
         
+        assiette2 = assiette1;
+        assiette1 = assiette3;
         /* question 6 */        
         
-        int Moussaka [] = new int[10];
-        
-        /* question 7 */
-        
+        Moussaka [] tab = new Moussaka[10];
+        for (int i = 0; i < tab.length; i++) {
+            tab[i] = new Moussaka (100*(1+i));
+            if (i == tab.length-1){
+                System.out.println(tab[i]);
+            }
+            else {
+                System.out.println(tab[i]);
+            }
+        }
+                
     }
     
 }
