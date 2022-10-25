@@ -8,9 +8,9 @@ package tp2_manip_cordier;
  *
  * @author Nina
  */
-public class Tartiflette {
+public class Tartiflette { /*nouvelle classe cree*/
     int nbCalories;
-    public Tartiflette(int NbCalories) {
+    public Tartiflette(int NbCalories) { /*constructeur qui analyse l'attribut nbCalories*/
         nbCalories = NbCalories;
     }
 }
