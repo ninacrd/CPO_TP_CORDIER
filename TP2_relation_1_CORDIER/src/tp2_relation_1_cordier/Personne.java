@@ -8,7 +8,7 @@ package tp2_relation_1_cordier;
  *
  * @author Nina
  */
-public class Personne {
+public class Personne { /*creation d'une nouvelle classe*/
     String nom;
     String prenom;
     int nbVoitures;
@@ -17,12 +17,12 @@ public class Personne {
     public Personne(String unprenom, String unnom) {
         nom = unnom;
         prenom = unprenom;
-        liste_voitures = new Voiture[3];
+        liste_voitures = new Voiture[3]; /*creation du tableau*/    
         
     }
     
     @Override
-    public String toString() {
+    public String toString() { /*methode similaire aux autres exos*/
         String chaine_a_retourner;
         chaine_a_retourner = "\nnom : " + nom + "\nprenom : " + prenom + 
         "\nnombre de voitures : " + nbVoitures;

@@ -26,7 +26,7 @@ public class TP2_relation_1_CORDIER {
         "\n" + uneAutreClio + "\n" + une2008 + "\n" + uneMicra ) ;
         
         
-        bob.liste_voitures[0] = uneClio ;
+        bob.liste_voitures[0] = uneClio ; /*ajout d'une relation*/
         bob.liste_voitures[1] = une2008;
         bob.nbVoitures = 2 ;
         uneClio.Proprietaire = bob ;

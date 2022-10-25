@@ -8,7 +8,7 @@ package tp2_relation_1_cordier;
  *
  * @author Nina
  */
-public class Voiture {
+public class Voiture { /*creation d'une nouvelle classe*/
     String modele;
     String marque;
     int PuissanceCV;
