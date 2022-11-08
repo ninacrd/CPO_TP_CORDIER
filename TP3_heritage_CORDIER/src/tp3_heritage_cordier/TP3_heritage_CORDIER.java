@@ -4,6 +4,8 @@
  */
 package tp3_heritage_cordier;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Nina
@@ -27,6 +29,12 @@ public class TP3_heritage_CORDIER {
             System.out.println(baton1) ;
         baton baton2 = new baton("Charme", 5,6) ;
             System.out.println(baton2) ;
+            
+        ArrayList <armes> nom_armes = new ArrayList <armes>(); /*creation du tableau dynamique*/
+        nom_armes.add(epee1);
+        nom_armes.add(epee2);
+        nom_armes.add(baton1);
+        nom_armes.add(baton2);
 
     }
     
