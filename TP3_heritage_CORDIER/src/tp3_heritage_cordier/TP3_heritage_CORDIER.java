@@ -4,9 +4,7 @@
  */
 package tp3_heritage_cordier;
 
-import Armes.epée;
-import Armes.baton;
-import Armes.armes;
+import Armes.*;
 import java.util.ArrayList;
 
 /**
