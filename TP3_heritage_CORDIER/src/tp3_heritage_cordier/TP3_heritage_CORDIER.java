@@ -4,6 +4,9 @@
  */
 package tp3_heritage_cordier;
 
+import Armes.epée;
+import Armes.baton;
+import Armes.armes;
 import java.util.ArrayList;
 
 /**
@@ -35,6 +38,14 @@ public class TP3_heritage_CORDIER {
         nom_armes.add(epee2);
         nom_armes.add(baton1);
         nom_armes.add(baton2);
+        
+        int taille = nom_armes.size();
+        int longueur = taille-1;
+        for (int i = 0; i<longueur; i++){
+            System.out.print(nom_armes.get(i)+", ");
+        }
+        
+        System.out.println(nom_armes.get(taille-1));
 
     }
     
