@@ -8,21 +8,20 @@ package tp3_heritage_cordier;
  *
  * @author Nina
  */
-public class armes { /*creation de la classe arme*/
-    String nom;
-    int niveau_attaque;
+public class epée extends armes {
+    int finesse;
     
-    public armes(String unNom, int un_niveau_attaque) {
+    public epée(String unNom, int un_niveau_attaque, int une_finesse) {
         /*creation d'un constructeur*/
-        nom = unNom;
-        niveau_attaque = un_niveau_attaque;
+        super (unNom, un_niveau_attaque);
+        finesse = une_finesse;
     }
     
     @Override
     public String toString() { /*methode qui permet de retourner la chaine de 
         caractere que l'on veut afficher quand l'objet est cree*/
         String chaine_a_retourner;
-        chaine_a_retourner = "L'arme " + nom + " a un niveau d'attaque de " + niveau_attaque;
+        chaine_a_retourner = "L'arme " + nom + " a un niveau d'attaque de " + niveau_attaque + " et un indice de finesse " + finesse; 
         return chaine_a_retourner;
     }
 }
