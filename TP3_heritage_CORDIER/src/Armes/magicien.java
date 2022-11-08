@@ -11,4 +11,11 @@ package Armes;
 public class magicien extends personnage { /*herite de personnage*/
     boolean confirmé;
     
+    public magicien(String unNom, int un_niveau_vie, boolean a) { /*initialisation des paramètres*/  
+        /*creation d'un constructeur*/
+        nom = unNom;
+        niveau_vie = un_niveau_vie;
+        confirmé = a;
+    }
+    
 }

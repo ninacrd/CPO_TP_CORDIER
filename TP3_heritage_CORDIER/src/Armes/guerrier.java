@@ -10,4 +10,11 @@ package Armes;
  */
 public class guerrier extends personnage { /*herite de personnage*/
     boolean cheval;
+    
+    public guerrier(String unNom, int un_niveau_vie, boolean b) { /*initialisation des paramètres*/  
+        /*creation d'un constructeur*/
+        nom = unNom;
+        niveau_vie = un_niveau_vie;
+        cheval = b;
+    }
 }
