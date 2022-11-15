@@ -27,11 +27,15 @@ public class TP3_heritage_CORDIER {
             System.out.println(epee1) ;
         epée epee2 = new epée("Durandal",4,7);
             System.out.println(epee2) ;
+        epée epee3 = new epée("acier",8,2);
+            System.out.println(epee3);
             
         baton baton1 = new baton("Chêne", 4,5) ;
             System.out.println(baton1) ;
         baton baton2 = new baton("Charme", 5,6) ;
             System.out.println(baton2) ;
+        baton baton3 = new baton("Bois",2,8);
+            System.out.println(baton3);
             
         ArrayList <armes> nom_armes = new ArrayList <armes>(); /*creation du tableau dynamique*/
         nom_armes.add(epee1);
@@ -76,6 +80,17 @@ public class TP3_heritage_CORDIER {
         }
         
         System.out.println(nom_personnage.get(taille-1));
-    }
     
+    
+    guerrier1.ajouterarme(baton1);
+    guerrier1.ajouterarme(epee1);
+    guerrier1.ajouterarme(epee2);
+    
+    magicien1.ajouterarme(baton2);
+    magicien1.ajouterarme(baton3);
+    magicien1.ajouterarme(epee3);
+    
+    guerrier1.equiperarme("Excalibur");
+        
+    }
 }

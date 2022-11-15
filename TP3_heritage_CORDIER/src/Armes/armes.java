@@ -24,6 +24,10 @@ public class armes { /*creation de la classe arme*/
             this.attaque = attaque;
         }
     }
+
+    public String getNom() {
+        return nom;
+    }
     
     @Override
     public String toString() { /*methode qui permet de retourner la chaine de 
