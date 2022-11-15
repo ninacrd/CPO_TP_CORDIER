@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Armes;
+package Personnages;
 
 /**
  *
@@ -17,6 +17,7 @@ public class personnage {
         nom = unNom;
         niveau_vie = un_niveau_vie;
     }
+    
     
     @Override
     public String toString() { /*methode qui permet de retourner la chaine de 
