@@ -92,5 +92,7 @@ public class TP3_heritage_CORDIER {
     
     guerrier1.equiperarme("Excalibur");
         
+    System.out.println(guerrier1);
+    System.out.println(magicien1);
     }
 }

@@ -11,12 +11,14 @@ import Personnages.personnage;
  * @author Nina
  */
 public class guerrier extends personnage { /*herite de personnage*/
+    public static int nbGuerrier = 0;
     boolean cheval;
     
     public guerrier(String unNom, int un_niveau_vie, boolean b) { /*initialisation des paramètres*/  
         super(unNom, un_niveau_vie);
         /*creation d'un constructeur*/
         this.cheval = b;
+        nbGuerrier ++;
     }
 
     public boolean isCheval() {

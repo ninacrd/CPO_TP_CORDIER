@@ -11,12 +11,15 @@ import Personnages.personnage;
  * @author Nina
  */
 public class magicien extends personnage { /*herite de personnage*/
+    public static int nbMagiciens = 0;
     boolean confirmé;
+    
     
     public magicien(String unNom, int un_niveau_vie, boolean a) { /*initialisation des paramètres*/  
         /*creation d'un constructeur*/
         super(unNom, un_niveau_vie);
-        confirmé = a;
+        this.confirmé = a;
+        nbMagiciens++;
     }
 
     public boolean isConfirmé() {

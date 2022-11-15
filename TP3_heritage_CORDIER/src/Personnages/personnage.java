@@ -6,12 +6,14 @@ package Personnages;
 
 import Armes.armes;
 import java.util.ArrayList;
+import tp3_heritage_cordier.etreVivant;
 
 /**
  *
  * @author Nina
  */
-public class personnage {
+public class personnage implements etreVivant { /*implementation des méthodes de etreVivant*/
+    public static int nbPersonnages = 0;
     String nom;
     int niveau_vie;
     ArrayList<armes> tableau = new ArrayList<armes>(); /*creation du tableau dynamique*/
@@ -22,6 +24,7 @@ public class personnage {
         nom = unNom;
         niveau_vie = un_niveau_vie;
         Arme_en_main = null; /*pas d'arme en main au départ*/
+        nbPersonnages++;
     }
     
     public void ajouterarme (armes arme_a_ajouter){ /*un personnage peut posséder jusqu'à 5 armes*/
@@ -52,6 +55,21 @@ public class personnage {
         String chaine_a_retourner;
         chaine_a_retourner = "nom : " + nom + "\nniveau de vie : " + niveau_vie + "\n arme en main : " + Arme_en_main; 
         return chaine_a_retourner;
+    }
+
+    @Override
+    public void seFatiguer() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public boolean estVivant() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void estAttaqué(int points) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }
